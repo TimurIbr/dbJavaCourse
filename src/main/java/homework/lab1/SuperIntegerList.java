@@ -5,6 +5,9 @@ package homework.lab1;
  */
 public interface SuperIntegerList {
 
+    //int getCup();
+    //int getLength();
+
     void add(int number);
 
     void removeByIndex(int index);
