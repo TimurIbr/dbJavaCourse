@@ -4,9 +4,7 @@ import homework.lab3.GameObjects.Attacks.Attack;
 import homework.lab3.GameObjects.Weapon.Weapon;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
-@ToString
 @Getter
 public abstract class BasicHero implements Hero{
     @Setter
@@ -32,8 +30,13 @@ public abstract class BasicHero implements Hero{
 
     public void receiveAttack(Attack attack) {
         this.setHealth(this.getHealth() - attack.getHealthDown());
-        this.setPower(this.getPower() - attack.getPowerDown());
+        if (this.getPower()>0){
+            this.setPower(this.getPower() - attack.getPowerDown());
+        }
     }
 
 
+    public String toString() {
+        return this.getName() + " [h " + this.getHealth() + " - " + this.getPower() + " p ]";
+    }
 }

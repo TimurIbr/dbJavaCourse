@@ -1,11 +1,12 @@
 package homework.lab3;
-
-//import com.github.javafaker.Faker;
 import homework.lab3.HeroFactory.BasicHeroFactory;
 
 /**
- * @author Evgeny Borisov
+ * @author Timur Ibraev
  */
+
+
+
 public class MainHeroes {
     public static void main(String[] args) {
 
