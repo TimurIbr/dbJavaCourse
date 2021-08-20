@@ -1,6 +1,6 @@
 package homework.lab5.task2;
 
-public class RadioAlarm implements Radio, Alarm{
+public class RadioAlarm implements RadioAlarmer{
     @Override
     public void alarmMethodC() {
         System.out.println("Alarm method c");
